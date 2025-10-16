@@ -22,14 +22,12 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <SidebarProvider>
-          <div className="flex top-0 min-h-screen w-full">
+          <div className="flex min-h-screen w-full">
             <AppSidebar />
             <div className="flex-1 flex flex-col">
               <header className="sticky top-0 z-10 flex h-16 items-center gap-4 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-6">
                 <div className="flex-1" />
               </header>
-              {/* <SidebarTrigger /> */}
-
               <main className="flex-1 p-6 md:p-8">
                 <Routes>
                   <Route path="/" element={<Dashboard />} />

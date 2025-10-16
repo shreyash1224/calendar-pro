@@ -29,7 +29,7 @@ export function AppSidebar() {
     <Sidebar collapsible="icon" className="border-r border-sidebar-border">
       <SidebarContent >
         <SidebarGroup className="pt-0">
-          <div className="sticky top-0 z-10 flex h-16 items-center gap-4 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-6">
+          <div className="sticky top-0 z-10 flex h-16 items-center justify-between  bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             {/* Left side: Label */}
             <SidebarGroupLabel className="text-sm font-semibold">
               <span className="font-bold text-2xl" >Calendar pro</span>
