@@ -12,7 +12,6 @@ import {
   SidebarTrigger,
   useSidebar,
 } from "@/components/ui/sidebar";
-import { ChevronRight, ChevronLeft } from "lucide-react";
 
 const items = [
   { title: "Dashboard", url: "/", icon: Home },

@@ -66,6 +66,20 @@ class ApiClient {
   deleteEvent(id: number): Promise<void> {
     return this.request<void>('DELETE', `/events/${id}`);
   }
+
+
+  // Auth endpoints
+  login(email: string, password: string): Promise<{ token: string; user: any }> {
+    return this.request('POST', '/auth/login', { email, password });
+  }
+
+  signup(name: string, email: string, password: string): Promise<{ token: string; user: any }> {
+    return this.request('POST', '/auth/signup', { name, email, password });
+  }
+
+  forgotPassword(email: string): Promise<{ message: string }> {
+    return this.request('POST', '/auth/forgot-password', { email });
+  }
 }
 
 export const apiClient = new ApiClient(API_BASE_URL);
